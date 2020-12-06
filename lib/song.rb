@@ -23,7 +23,7 @@ class Song
     track_artist = filename.split(" - ")[0]
     new_song = self.new(track_title.to_s)
     new_song.artist_name= track_artist.to_s
-    artist_object = Artist.all.find {|artist_instance| artist_instance.name == track_artist}
+    artist_object = Artist.all.find {|artist_instance| artist_instance.name == track_artist.to_s}
     new_song.artist = artist_object
   end
 
