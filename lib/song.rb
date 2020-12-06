@@ -24,7 +24,6 @@ class Song
     self.new(track_title)
     new_song = self.all.find {|song_instance| song_instance.name == track_title}
     new_song.artist_name= track_artist
-    artist.songs << new_song
     new_song
   end
 
