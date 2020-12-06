@@ -23,7 +23,7 @@ class Song
     track_title = filename.split(" - ")[1]
     new_song = Song.new(track_title)
     artist = Artist.find_or_create_by_name(track_artist)
-    artist.songs << song
+    artist.songs << new_song
     song
   end
 
