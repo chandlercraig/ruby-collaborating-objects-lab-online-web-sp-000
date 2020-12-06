@@ -21,7 +21,8 @@ class Song
   def self.new_by_filename(filename)
     track_artist = filename.split(" - ")[0]
     track_title = filename.split(" - ")[1]
-    new_song = self.new(track_title)
+    self.new(track_title)
+    new_song = self.all.find {|song_instance| song_instance.name == track_title}
     new_song.artist_name= track_artist
     artist.songs << new_song
     new_song
