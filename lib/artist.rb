@@ -24,7 +24,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(artist_name)
-    self.all.select do |artist_instance|
+    self.all.collect do |artist_instance|
       if artist_instance.name == artist_name
         return artist_instance
       elsif artist_instance.name == nil || artist_instance.name != artist_name
