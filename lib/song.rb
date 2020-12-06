@@ -28,7 +28,6 @@ class Song
     our_artist = Artist.find_or_create_by_name(artist_name)
     artist_instance = Artist.all.find {|artist_instance| artist_instance.name == artist_name}
     artist_instance.add_song(artist_name)
-
   end
 
 end
