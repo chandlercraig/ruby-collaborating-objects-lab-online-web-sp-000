@@ -28,7 +28,7 @@ class Artist
     if existing_artist == nil
       self.new(artist_name)
     end
-    
+
   end
 
   def print_songs
