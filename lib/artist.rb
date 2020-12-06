@@ -31,7 +31,6 @@ class Artist
     else
       existing_artist
     end
-
   end
 
   def print_songs
