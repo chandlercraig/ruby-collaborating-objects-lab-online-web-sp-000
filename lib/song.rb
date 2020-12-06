@@ -26,6 +26,5 @@ class Song
     Artist.find_or_create_by_name(artist_name)
     Artist.add_song(self)
   end
-  end
 
 end
