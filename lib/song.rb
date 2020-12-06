@@ -24,7 +24,6 @@ class Song
     new_song = self.new(track_title)
     artist = Artist.find_or_create_by_name(track_artist)
     artist.songs << new_song
-    song
   end
 
   def artist_name=(artist_name)
