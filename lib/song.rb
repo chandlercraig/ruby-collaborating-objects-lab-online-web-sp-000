@@ -24,6 +24,7 @@ class Song
     song = self.new(track_title.to_s)
     song
     song.artist = track_artist.to_s
+    song.artist
   end
 
   def artist_name=(artist_name)
